@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ichigo SHIMADA">
     <meta name="keywords" content="html, css, javascript">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./page1.main.css">
 
     <title>旅のしおり ベトナム編</title>
 </head>
@@ -23,11 +23,11 @@
     <nav class="nav">
         <ul>
             <li class="day1">DAY1</li>
-            <li class="day2"><a href="../Page2/Index.html">DAY2</a></li>
-            <li class="day3"><a href="../Page3/index.html">DAY3</a></li>
+            <li class="day2"><a href="../Page2/page2.index.html">DAY2</a></li>
+            <li class="day3"><a href="../Page3/index.html.page3">DAY3</a></li>
             <li>ホテルの情報</li>
             <li><a href="https://translate.google.co.jp/?hl=ja&sl=vi&tl=ja&op=translate">ベトナム語翻訳サイト</a></li>
-            <li><a href="../page4/index.html">旅くじ</a></li>
+            <li><a href="../page4/page4.index.html">旅くじ</a></li>
         </ul>
     </nav>
 
