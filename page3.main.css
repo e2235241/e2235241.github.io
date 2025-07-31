@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+*{
+    font-family: "ヒラギノ丸ゴ ProN","Hiragino Maru Gothic ProN";
+}
+
+.nav > ul > li {
+    display: inline;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 40px;
+    background-color: rgb(250, 255, 164);
+}
+
+a[href] {
+    color: rgb(255, 0, 0);
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas: 
+    "h1 h2 ベトナムの国旗"
+    ;
+}
+
+.main1{
+    margin-top: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
