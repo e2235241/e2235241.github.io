@@ -22,55 +22,62 @@
 
     <nav class="nav">
         <ul>
-            <li class="day1">DAY1</li>
+            <li class="day1"><a href="../Page1/index.html">DAY1</a></li>
             <li class="day2"><a href="../Page2/Index.html">DAY2</a></li>
             <li class="day3"><a href="../Page3/index.html">DAY3</a></li>
             <li>ホテルの情報</li>
             <li><a href="https://translate.google.co.jp/?hl=ja&sl=vi&tl=ja&op=translate">ベトナム語翻訳サイト</a></li>
-            <li><a href="../page4/index.html">旅くじ</a></li>
+            <li>旅くじ</li>
         </ul>
     </nav>
 
-    <main>
-        <div class="main1">
-            <h3 id="start">am 2:00 羽田空港出発</h3>
-            <p>八王子から羽田空港行き直通バス19:25発があるためそれに乗車し、夜ご飯等は羽田空港で食べる。</p>
-            <h3 id="options">am 6:00 タンソンニャット国際空港(ベトナム・ホーチミン)到着</h3>
-            <h3>am 7:00頃 バスで市内まで移動</h3>
-            <ul>
-                <li>15,000ドン(約90円)/1人</li>
-                <li>スーツケースなどがある場合は二人分のチケットが必要</li>
-                <li>所要時間 45分、営業時間 5:30～22:15</li>
-                <li>乗り場 109番</li>
-                <li><a href="https://poste-vn.com/lifetips/hochiminh-airport-248"></a>参考サイト</li>
-            </ul>
-            <h3>am 8:00 ホーチミン市内到着</h3>
-            <p>市内に着いてからまずすること</p>
-            <ul>
-                <li>ホテルに荷物を預ける</li>
-                <li>仮眠をとる</li>
-            </ul>
-            <h3>pm 00:00 お昼ご飯 atグエンフエ通り</h3>
-            <h3>pm 2:00 アオザイ体験</h3>
-            <ul>
-                <li>予算約2000円</li>
-                <li>予約不要</li>
+<body>
+<h2 class="旅くじ">旅くじ</h2>
+<label for="travelType">どんな旅行に行きたいか選んでください！：</label>
+<select id="travelType">
+    <option value="">選択してください</option>
+    <option value="technology">発展した技術を体感したい</option>
+    <option value="adventure">冒険したい</option>
+    <option value="culture">文化を楽しみたい</option>
+    <option value="nature">自然を感じたい</option>
+    <option value="food">美味しいものを食べたい</option>
+    <option value="relax">ゆったりと過ごしたい</option>
+</select>
+<button onclick="recommendDestination()">表示</button>
 
-            </ul>
-            <h3>pm 3:00 市内散策</h3>
-            <h3>pm 6:00 夜ご飯</h3>
-            <h3>pm 7:00 サイゴンスカイデッキ</h3>
-            <ul>
-                <li>料金は200000VND(約1200円)でクレジットでも払える。</li>
-            </ul>
-            <h3>pm 9:00 ホテル到着</h3>
-        </div>
+<div id="result"></div>
 
-    </main>
+<script>
+    function recommendDestination() {
+    const type = document.getElementById("travelType").value;
+    const result = document.getElementById("result");
 
-    <footer class="footer">
-        <p>Copyright &copy; Ichigo SHIMADA, All Rights Reserved.</p>
-    </footer>
-    
+    switch (type) {
+        case "technology":
+        recommendation = "シンガポールで最先端の技術に触れよう！";
+        break;
+        case "adventure":
+        recommendation = "オーストラリアでヒッチハイクで大陸横断しよう！";
+        break;
+        case "culture":
+        recommendation = "インドで歴史ある文化や宗教を体験しよう！";
+        break;
+        case "nature":
+        recommendation = "カナダのロッキー山脈やナイアガラの滝で大自然を満喫しよう！";
+        break;
+        case "food":
+        recommendation = "イタリアやフランスで本場の味を楽しもう！";
+        break;
+        case "relax":
+        recommendation = "ニュージーランドの小島で自給自足生活！";
+        break;
+        default:
+        recommendation = "旅行のタイプを選んでください。";
+}
+
+result.textContent = recommendation;
+    }
+</script>
+
 </body>
 </html>

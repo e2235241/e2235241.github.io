@@ -31,3 +31,24 @@ a[href] {
     border: 1px solid black;
     border-radius: 5px;
 }
+
+body {
+    font-family: sans-serif;
+    margin: 30px;
+}
+label, select, button {
+    font-size: 1.2em;
+}
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.旅くじ{
+    margin-top: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+
+}
